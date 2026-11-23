@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jirawat2105.panotess.tests">
+    <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="37"/>
+    <application android:label="PanoTess tests">
+        <provider android:name="com.jirawat2105.panotess.TestDocuments" android:authorities="com.jirawat2105.panotess.tests.documents" android:permission="android.permission.MANAGE_DOCUMENTS" android:exported="true" android:grantUriPermissions="true"/>
+    </application>
+    <instrumentation android:name="com.jirawat2105.panotess.NativeSmoke" android:targetPackage="com.jirawat2105.panotess"/>
+</manifest>

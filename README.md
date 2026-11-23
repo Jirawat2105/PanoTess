@@ -28,6 +28,16 @@ tests/           Automated tests
 
 Compiled downloads are kept in Releases rather than the source tree.
 
+## Android testing APK
+
+The native Android edition targets Android 17 / API 37. Download the [Android testing APK](https://github.com/Jirawat2105/PanoTess/releases/tag/android-v1.0.1).
+
+Select JPG/PNG images, preview 2/3/4 slices, choose a centered aspect-ratio crop, and export into per-image subfolders inside a folder selected through Android. PNG preserves supported decoded 8-bit pixels; JPG uses quality 100 and re-encodes. TIFF, source JPEG compression settings, original EXIF/ICC metadata preservation, and draggable crop positioning are not part of this edition.
+
+Version 1.0.1 centers the empty preview message. The signed testing APK passed native integration tests on an Android 17 emulator, including PNG pixel comparisons, centered crops, unique folders, JPG output, previews and manifests. Physical devices and the manual picker flow have not been validated. This is a sideload testing build, not a Google Play production release.
+
+See [Android build instructions and limitations](android/README.md).
+
 ## Features
 
 - Split one image or a batch of images into 2, 3, or 4 slices.
